@@ -74,5 +74,5 @@ app.get('getBalancePerZone', function(req, res) {
         res.send(balance); 
     }); 
 })
-
-app.listen(3000 || process.env.PORT, () => console.log('Example app listening on port 3000!'))
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
