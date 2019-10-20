@@ -34,8 +34,8 @@ var contract = new web3js.eth.Contract(contractABI, contractAddress);
 
 app.get('/allotPoints',function(req,res) {
     var person = req.query.person
-    var tokens = req.query.tokens
-    var zone = req.query.zone
+    var tokens = Number(req.query.tokens)
+    var zone = Number(req.query.zone)
     var toAddress = credentials[person].public
     web3js.eth.accounts.privateKeyToAccount(privateKey);
     const tx = {
