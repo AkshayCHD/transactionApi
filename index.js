@@ -2,7 +2,8 @@
 const web3 = require('web3');
 const express = require('express');
 const app = express();
-
+var cors = require('cors')
+app.use(cors())
 var CONTRACT_ABI = require('./config.js').CONTRACT_ABI
 var CONTRACT_ADDRESS = require('./config.js').CONTRACT_ADDRESS
 
