@@ -1,0 +1,16 @@
+{
+  "name": "transapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethereumjs-tx": "^2.1.1",
+    "express": "^4.17.1",
+    "web3": "^1.2.1"
+  }
+}
