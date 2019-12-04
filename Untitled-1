@@ -1,0 +1,72 @@
+// web3js.eth.getTransactionCount(myAddress).then(function(v){
+    //     console.log("Count: " + v);
+    //     count = v;
+    //     var amount = web3js.utils.toHex(1e16);
+    //     //creating raw tranaction
+    //     // var rawTransaction = {
+    //     //     "from": myAddress,
+    //     //     "gasPrice": web3js.utils.toHex(20* 1e9),
+    //     //     //"gasPrice": "0x0",
+    //     //     "gasLimit": web3js.utils.toHex(210000),
+    //     //     "to": contractAddress,
+    //     //     "value": "0x0",
+    //     //     "data": contract.methods.transferFromContract(15, 1, toAddress).encodeABI(),
+    //     //     "nonce": web3js.utils.toHex(count)
+    //     // }
+
+    //     console.log("my address", myAddress)
+    //     console.log("to address", toAddress)
+    //     const rawTransaction = {
+    //         from: myAddress,
+    //         to: contractAddress, 
+    //         gas: 800000,
+    //         data: contract.methods.transferFromContract(tokens, zone, toAddress).encodeABI(), 
+    //         gasPrice: "0x0", // Required
+    //         nonce: web3js.utils.toHex(count)
+    //     }
+    //     console.log(rawTransaction);
+    //     //creating tranaction via ethereumjs-tx
+    //     var transaction = new Tx(rawTransaction);
+    //     //signing transaction with private key
+    //     transaction.sign(privateKey);
+    //     //sending transacton via web3js module
+    //     web3js.eth.sendSignedTransaction('0x'+transaction.serialize().toString('hex'))
+    //     .on('transactionHash',console.log);
+
+        
+    //     contract.methods.getBalance(toAddress).call()
+    //     .then(function(balance){
+    //         console.log(balance)
+                    
+    //         res.send(true);
+    //     });
+    //     // web3js.eth.signTransaction(rawTransaction).then((result) => {
+    //     //     web3js.eth.sendSignedTransaction(result).then((receipt)=> console.log (receipt))
+    //     // })
+
+    // })
+
+
+    ///////////////////***********************/////////////////////////////////
+
+///////////////////********For Local*******/////////////////////////////////
+
+// web3js = new web3(new web3.providers.HttpProvider("http://localhost:7545"));
+// var myAddress = '0x3B97cdEF82DD2D31AC3a2a12D8858b0311Df4cc0';
+// var privateKey = Buffer.from('4561783838A4D8E963103F3D031747C99D961DCD6AF483CF56D77D3B4C45B59F', 'hex')
+
+// var credentials = {
+//     'akshay': {
+//         private: '4561783838a4d8e963103f3d031747c99d961dcd6af483cf56d77d3b4c45b59f',
+//         public: '0x3B97cdEF82DD2D31AC3a2a12D8858b0311Df4cc0' 
+//     },
+//     'parul': {
+//         private: '36bbf9f1e278101fe04d1201c9ed14990b050c7b46597fd4e3531a15b5dbe9dd',
+//         public: '0xDF60A482c951AeE9F817108b0dDc9AC007420008'
+//     },
+//     'dhruv': {
+//         private: 'c431cca6c4ff4c74022345c9a9d45799b8f6674e300848e0321d3bf8c3e2ea85',
+//         public: '0x6cbad9F4646D53E19D9426B3877B208458626e8c'
+//     }
+// }
+///////////////////***********************/////////////////////////////////
